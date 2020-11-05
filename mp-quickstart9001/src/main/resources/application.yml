@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: mp-quickstart
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mp?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+
+server:
+  port: 9001
+
+mybatis-plus:
+  type-aliases-package: com.orion.mp.entities
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
